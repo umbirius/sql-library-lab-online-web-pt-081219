@@ -9,7 +9,7 @@ def select_name_and_motto_of_char_with_longest_motto
   "SELECT name, motto 
   FROM characters
   GROUP BY motto
-  HAVING MAX(motto)"
+  HAVING MAX(LEN(motto))"
 end
 
 
